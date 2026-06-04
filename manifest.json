@@ -1,0 +1,22 @@
+{
+  "short_name": "MyMedia",
+  "name": "MyMedia App",
+  "description": "MyMedia is a site for insert your videos and you can add more videos.",
+  "icons": [
+    {
+      "src": "./icons/favicon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "./icons/favicon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/index.html",
+  "background_color": "#ffffff",
+  "theme_color": "#007bff",
+  "display": "standalone",
+  "orientation": "portrait"
+}

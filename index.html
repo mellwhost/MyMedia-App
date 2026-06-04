@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyMedia</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./main-assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./icons/favicon.png" type="image/x-icon" />
+    <link rel="manifest" href="./manifest.json" />
+  </head>
+  <body>
+    <!--span-->
+    <div class="spam-title">
+      <i class="fa-solid fa-icons"></i> Not videos or musics here.
+    </div>
+    <!--spam-->
+    <div class="nav">
+      <div class="logo">
+        <div class="logo-base">
+          <i class="fa-solid fa-music"></i>
+        </div>
+        <span>MyMedia</span>
+      </div>
+    </div>
+    <div class="input-area">
+      <input
+        type="text"
+        id="input-video-link"
+        placeholder="insert your music or video link here. Ex: https://www.youtube.com/embed/1234567890"
+      />
+      <button onclick="LoadVideo()" id="sumbmit-btn">Submit</button>
+    </div>
+    <div id="videoContainer"></div>
+    <section class="warnClass" id="warn-invalid">
+      <button class="close-btn" id="close" onclick="closeInvalidWarn()">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <span>Please, insert a valid video or music link.</span>
+    </section>
+    <script src="./main-assets/js/submit.js"></script>
+    <script src="./main-assets/js/warns.js"></script>
+    <script defer src="/_vercel/insights/script.js"></script>
+  </body>
+</html>
