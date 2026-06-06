@@ -1,0 +1,97 @@
+<!----
+    <div id="loading-screen">
+      <div class="logo-load">
+        <div class="logo-base-load">
+          <i class="fa-solid fa-music"></i>
+        </div>
+        <span style="color: #fff; font-size: 1.3rem">MyMedia</span>
+      </div>
+    </div>
+  -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyMedia</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./main-assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./icons/favicon.png" type="image/x-icon" />
+    <link rel="manifest" href="./manifest.json" />
+  </head>
+  <body>
+    <div id="loading-screen">
+      <div class="logo-load">
+        <div class="logo-base-load">
+          <i class="fa-solid fa-music"></i>
+        </div>
+        <span style="color: #000000; font-size: 1.3rem">MyMedia</span>
+      </div>
+      <div class="load-icon">
+        <div class="bar"></div>
+      </div>
+    </div>
+    <!--spam-->
+    <div class="nav">
+      <div onclick="window.location.href = 'index.html'" class="logo">
+        <div class="logo-base">
+          <i class="fa-solid fa-music"></i>
+        </div>
+        <span>MyMedia</span>
+      </div>
+      <button id="media-btn" onclick="openAreaUpload()">
+        <i class="fa-solid fa-plus"></i>
+        <div class="tag">Upload</div>
+      </button>
+    </div>
+    <div id="input-area" class="input-area">
+      <h1>Insert Video or Music Link</h1>
+      <input
+        type="text"
+        id="input-video-link"
+        placeholder="insert your music or video link here. Ex: https://www.youtube.com/embed/1234567890"
+      />
+      <button onclick="LoadVideo()" id="sumbmit-btn">Submit</button>
+      <h1>or upload a file.</h1>
+      <input
+        type="file"
+        id="input-file"
+        accept="audio/*,video/*"
+        onchange="LoadFile()"
+      />
+      <button onclick="UploadFile()">Upload File</button>
+      <div style="display: flex" class="group">
+        <i class="fa-solid fa-globe"></i>
+        <div class="sep"></div>
+        <i class="fa-solid fa-file"></i>
+      </div>
+    </div>
+    <div id="videoContainer">
+      <div class="spam-title" id="spam-title">
+        <i class="fa-solid fa-icons"></i> Not videos or musics here.
+      </div>
+    </div>
+    <section class="warnClass" id="warn-invalid">
+      <button class="close-btn" id="close" onclick="closeInvalidWarn()">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <span>Please, insert a valid video or music link.</span>
+    </section>
+    <script src="./main-assets/js/submit.js"></script>
+    <script src="./main-assets/js/warns.js"></script>
+    <script src="./main-assets/js/loading.js"></script>
+    <script defer src="/_vercel/insights/script.js"></script>
+  </body>
+</html>
